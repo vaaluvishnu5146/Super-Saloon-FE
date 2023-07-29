@@ -1,7 +1,7 @@
-import React from 'react';
-import { HiBars4 } from 'react-icons/hi2';
+import React from "react";
+import { HiBars4 } from "react-icons/hi2";
 
-function AppHeader({ pageName = '', headerColor = '', textColor = '' }) {
+function AppHeader({ pageName = "", headerColor = "", textColor = "" }) {
   return (
     <nav
       id="app-header"
@@ -9,13 +9,14 @@ function AppHeader({ pageName = '', headerColor = '', textColor = '' }) {
       style={{
         background: headerColor,
         color: textColor,
+        marginBottom: 10,
       }}
     >
       <div className="navigation-container">
         <HiBars4
           style={{
-            fontSize: '1.4rem',
-            marginRight: '20px',
+            fontSize: "1.4rem",
+            marginRight: "20px",
           }}
         />
         {pageName && <h4>{pageName}</h4>}
